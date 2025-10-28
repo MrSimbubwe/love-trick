@@ -62,7 +62,7 @@
 <body>
 
 <div class="frame" id="mainFrame">
-  <h1 id="question">คุณรักเค้าไหม? 💖</h1>
+  <h1 id="question">เธอรักเค้าไหม? 💖</h1>
   <img id="gif" src="https://media.tenor.com/76BaX0eo304AAAAj/kitty-kitty-heart.gif" alt="cute gif">
   <div id="btnContainer"></div>
 </div>
@@ -98,7 +98,7 @@
   function resetPage() {
     noCount = 0;
     yesBtnSize = 18;
-    question.textContent = "รักเค้าไหม? 💖";
+    question.textContent = "เธอรักเค้าไหม? 💖";
     // แก้ตรงนี้เพื่อเปลี่ยนรูปหน้าแรก
     gif.src = "https://media.tenor.com/76BaX0eo304AAAAj/kitty-kitty-heart.gif";
     initButtons();
@@ -107,7 +107,7 @@
   function yesClick(yesBtn) {
     // แก้ตรงนี้เพื่อเปลี่ยนรูปเมื่อกด yes
     gif.src = "https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif";
-    question.textContent = "เย่ เค้าก็รักเธอเหมือนกัน 💗";
+    question.textContent = "เย่ เค้าก็รักเธอเหมือนกัน รักนะคะ 💗";
     btnContainer.innerHTML = `<button class="btn" id="homeBtn">Home 🏠</button>`;
     document.getElementById('homeBtn').addEventListener('click', resetPage);
   }
